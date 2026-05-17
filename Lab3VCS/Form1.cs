@@ -47,5 +47,42 @@ namespace Lab3VCS
             }
 
         }
+
+        private void btnBuildGasChart_Click(object sender, EventArgs e)
+        {
+            if (dataGridGases.Rows.Count == 0)
+            {
+                MessageBox.Show("Сначала загрузите файл с данными.");
+                return;
+            }
+
+            chartGases.Series.Clear();
+            chartGases.ChartAreas[0].AxisX.Title = "Год";
+            chartGases.ChartAreas[0].AxisY.Title = "Выбросы, млн тонн CO2-экв.";
+            chartGases.ChartAreas[0].AxisX.Interval = 1;
+
+            string[] gases = { "CO2", "CH4", "N2O" };
+
+            foreach (string gas in gases)
+            {
+                var series = new System.Windows.Forms.DataVisualization.Charting.Series(gas);
+                series.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+                series.BorderWidth = 3;
+
+                foreach (DataGridViewRow row in dataGridGases.Rows)
+                {
+                    if (row.IsNewRow) continue;
+
+                    int year = Convert.ToInt32(row.Cells["Year"].Value);
+                    double value = Convert.ToDouble(row.Cells[gas].Value);
+
+                    series.Points.AddXY(year, value);
+                }
+
+                chartGases.Series.Add(series);
+            }
+
+            txtGasResult.Text = "График выбросов парниковых газов построен.";
+        }
     }
 }

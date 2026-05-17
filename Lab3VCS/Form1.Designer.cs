@@ -205,6 +205,7 @@
             this.btnBuildGasChart.TabIndex = 2;
             this.btnBuildGasChart.Text = "Построить график";
             this.btnBuildGasChart.UseVisualStyleBackColor = true;
+            this.btnBuildGasChart.Click += new System.EventHandler(this.btnBuildGasChart_Click);
             // 
             // dataGridGases
             // 
