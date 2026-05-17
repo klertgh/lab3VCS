@@ -223,6 +223,7 @@
             this.btnLoadGasFile.TabIndex = 0;
             this.btnLoadGasFile.Text = "Загрузить файл";
             this.btnLoadGasFile.UseVisualStyleBackColor = true;
+            this.btnLoadGasFile.Click += new System.EventHandler(this.btnLoadGasFile_Click);
             // 
             // Form1
             // 
