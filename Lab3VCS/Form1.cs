@@ -16,5 +16,6 @@ namespace Lab3VCS
         {
             InitializeComponent();
         }
+
     }
 }
