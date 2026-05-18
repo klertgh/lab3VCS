@@ -1,0 +1,11 @@
+C:\PT\lab3VCS\Lab3VCS\bin\Debug\Lab3VCS.exe.config
+C:\PT\lab3VCS\Lab3VCS\bin\Debug\Lab3VCS.exe
+C:\PT\lab3VCS\Lab3VCS\bin\Debug\Lab3VCS.pdb
+C:\PT\lab3VCS\Lab3VCS\obj\Debug\Lab3VCS.csproj.AssemblyReference.cache
+C:\PT\lab3VCS\Lab3VCS\obj\Debug\Lab3VCS.Form1.resources
+C:\PT\lab3VCS\Lab3VCS\obj\Debug\Lab3VCS.Properties.Resources.resources
+C:\PT\lab3VCS\Lab3VCS\obj\Debug\Lab3VCS.csproj.GenerateResource.cache
+C:\PT\lab3VCS\Lab3VCS\obj\Debug\Lab3VCS.csproj.CoreCompileInputs.cache
+C:\PT\lab3VCS\Lab3VCS\obj\Debug\Lab3VCS.exe
+C:\PT\lab3VCS\Lab3VCS\obj\Debug\Lab3VCS.pdb
+C:\PT\lab3VCS\Lab3VCS\obj\Debug\Lab3VCS.exe.config
